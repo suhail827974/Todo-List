@@ -1,0 +1,88 @@
+*{
+    padding:0;
+    margin:0;
+
+}
+.container{
+    background-color: rgb(10, 4, 57);
+    width:100vw;
+    height: 100vh;
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column;
+    align-items: center;
+}
+.our-inp{
+    border:5px solid red;
+    margin-top: 50px;
+    width: 30%;
+    height: 3%;
+    border-radius: 10px;
+    padding: 10px;
+    outline: none;
+    font-size: 20px;
+
+}
+.add-btn{
+    border:2px solid rgb(6, 163, 248);
+    margin:10px 0px 20px 0px;
+    border-radius: 10px;
+    font-size: 15px;
+    padding:10px 30px;
+    font-weight: bold;
+    color:rgb(6, 163, 248);
+    background-color: rgb(10, 4, 57);
+    
+    &:hover{
+        cursor: pointer;
+        color: whitesmoke;
+        border: 2px solid whitesmoke;
+        background-color: rgb(6, 163, 248);
+        transition: all 1s ease-in-out;
+
+    }
+    
+}
+#list{
+    border:2px solid rgb(6, 163, 248);
+    min-width: 50%;
+    max-height: 65%;
+    font-size: 25px;
+    list-style-type: none;
+    color:whitesmoke;
+    padding:15px;
+    overflow: scroll;
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px rgb(6, 163, 248);
+    transform: skew(2deg, 2deg);
+    
+}
+#list::-webkit-scrollbar{
+    display: none;
+}
+#list > li{
+    background-color: rgb(189, 186, 186);
+    color: black;
+    border:2px solid whitesmoke;
+    padding: 2px 5px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px rgb(245, 245, 245);
+}
+#list > button{
+    border:2px solid rgb(6, 163, 248);
+    background-color: rgb(10, 4, 57);
+    color: rgb(6, 163, 248);
+    font-size: 15px;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding:5px 20px;
+    transition: all 1s ease;
+    &:hover{
+        box-shadow: 0px 0px 15px whitesmoke;
+        border: 2px solid whitesmoke;
+        color: whitesmoke;
+        background-color: rgb(6, 163, 248);;
+
+    }
+}
